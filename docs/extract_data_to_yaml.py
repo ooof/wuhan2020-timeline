@@ -14,7 +14,7 @@ for line in file_input:
     if line[0:2] == "##":
         file_output.write('\n- date: '+ line[3:]+'  items:\n')
         
-        print('date: '+line)
+        #print('date: '+line)
     elif line[0:1] == "【":
         file_output.write('  - item_name: group\n    content: "'+line[:-1] + '"\n')
         #print('group '+ line)
