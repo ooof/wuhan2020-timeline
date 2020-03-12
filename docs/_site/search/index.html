@@ -54,7 +54,7 @@
                     $.each(data, function(id, item) {
                         //如果包含则为table赋值
                         if (item.content.indexOf(seachText) != -1) {
-                            tab += "<li> " + item.date + "，" + item.content + "</li>";
+                            tab += "【" + item.date + "】，" + item.content + "<br>";
                         }
                     })
                     tab += "";
