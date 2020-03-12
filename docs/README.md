@@ -27,5 +27,5 @@ The original files are in the root folder. All files for the website are in this
 - [x] Some of the links might need to fix. For example, the first link in the read me page 疫情与舆情：武汉新冠肺炎时间线TIMELINE should change to [疫情与舆情：武汉新冠肺炎时间线TIMELINE](index), such that it will go from the "about" page to the "homepage"
 - [x] In README.md, the | should replace by dot by hand.
 - [x] Add "scroll to bottom button in index"
-
+- [ ] Add [search page](https://github.com/dvop/dvop.github.io/tree/master/COVID-19)
 

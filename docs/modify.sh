@@ -6,6 +6,7 @@
 sed  's/|/·/g' ../时间线TIMELINE.md > index.md
 
 # extract data and save some formated file like reversed.md. no package needed so far
+pip3 install --upgrade setuptools
 pip3 install -r requirement.txt
 python3 extract_data_to_yaml.py
 
