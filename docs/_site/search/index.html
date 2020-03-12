@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,maximum-scale=2">
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css?v=4817ff0aadb6a6902cdee51766c00793d5a8c432">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Search | wuhan2020-timeline</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Search" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="以 社会学年鉴模式体例规范地统编自2019年12月起武汉新冠肺炎疫情进展的时间线。" />
+<meta property="og:description" content="以 社会学年鉴模式体例规范地统编自2019年12月起武汉新冠肺炎疫情进展的时间线。" />
+<link rel="canonical" href="http://localhost:4000/search/" />
+<meta property="og:url" content="http://localhost:4000/search/" />
+<meta property="og:site_name" content="wuhan2020-timeline" />
+<script type="application/ld+json">
+{"description":"以 社会学年鉴模式体例规范地统编自2019年12月起武汉新冠肺炎疫情进展的时间线。","@type":"WebPage","url":"http://localhost:4000/search/","headline":"Search","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/WeileiZeng/wuhan2020-timeline">View on GitHub</a>
+
+          <h1 id="project_title">wuhan2020-timeline</h1>
+          <h2 id="project_tagline">以 社会学年鉴模式体例规范地统编自2019年12月起武汉新冠肺炎疫情进展的时间线。</h2>
+
+          
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <script src="data.json"></script>
+    <script src="jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            var seach = $("#seach");
+            seach.keyup(function(event) {
+                var seachText = $("#seach").val();
+                if (seachText != "") {
+                    //构造显示页面
+                    var tab = "";
+                    //遍历解析json
+                    $.each(data, function(id, item) {
+                        //如果包含则为table赋值
+                        if (item.content.indexOf(seachText) != -1) {
+                            tab += "<li> " + item.date + "，" + item.content + "</li>";
+                        }
+                    })
+                    tab += "";
+                    $("#div").html(tab);
+                    //重新覆盖掉，不然会追加
+                    tab = "";
+                } else {
+                    $("#div").html("");
+                }
+                // }
+            })
+
+        });
+    </script>
+
+
+
+
+        <p style="font:20;">
+
+        搜索关键词：<input style="font:28px arial; height:1.8em; width:200px;text-align:center" id="seach" value="湖北"/>
+       </p>
+
+
+                    <div id="div"></div>
+        
+        <br>
+
+        <p>数据来源：<a href="https://github.com/Pratitya/wuhan2020-timeline/blob/master/%E6%97%B6%E9%97%B4%E7%BA%BFTIMELINE.md">疫情与舆情:武汉新冠肺炎时间线</p>
+
+
+
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        
+        <p class="copyright">wuhan2020-timeline maintained by <a href="https://github.com/WeileiZeng">WeileiZeng</a></p>
+        
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+  </body>
+</html>
